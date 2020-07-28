@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JWT APP</title>
+    <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #f64f59;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #007f60, #449900, #40f900);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #007f60, #449900, #40f900); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        min-height: 100vh;
+        width: 100vw;
+        margin: 0;
+    }
+
+  </style>
+  </head>
+  <body>
+    <h2>Welcome to the homepage to sign up with </h2>
+    <h4>The form below is for registering a new user (email) and password</h4>
+    <h2>SignUp Page</h2>
+    </br>
+    <form id="login_user" action="/login" method="get">
+      <input type="submit" value="Go to Login Page"/>
+    </form>
+    </br>
+  <form id="signup" action="/user_new" method="post">
+  <fieldset>
+    <legend>Sign up</legend>
+    <p>
+      <input type="email" id="signup-email" placeholder="Email"  name="email_val" required/>
+    </p>
+    <p>
+      <input type="password" id="signup-password" placeholder="Password" name="pass_val" required/>
+    </p>
+    <input type="submit" value="Sign up"/>
+  </fieldset>
+</form>
+  </body>
+</html>

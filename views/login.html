@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JWT APP</title>
+    <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #f64f59;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #007f60, #449900, #40f900);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #007f60, #449900, #40f900); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        min-height: 100vh;
+        width: 100vw;
+        margin: 0;
+    }
+
+  </style>
+  </head>
+  <body>
+    <h2>Welcome to the homepage to login to </h2>
+    <h4>The fields below are required for logging into an user with certain credentials</h4>
+    <h2>Login Page</h2>
+    </br>
+    <form id="return_signup" action="/" method="get">
+      <input type="submit" value="Go to SignUp Page"/>
+    </form>
+    </br>
+  <form id="signup" action="/user_current" method="post">
+  <fieldset>
+    <legend>Login</legend>
+    <p>
+      <input type="email" id="signup-email" placeholder="Email"  name="email_val" required/>
+    </p>
+    <p>
+      <input type="password" id="signup-password" placeholder="Password" name="pass_val" required/>
+    </p>
+    <input type="submit" value="Login"/>
+  </fieldset>
+</form>
+  </body>
+</html>
